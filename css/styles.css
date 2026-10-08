@@ -1,0 +1,532 @@
+/* =========================================
+   GENERAL PAGE SETTINGS
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* =========================================
+   REPEATED SECTION CLASS
+   ========================================= */
+
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   UNIQUE ID SELECTOR
+   ========================================= */
+
+#hobbies {
+    background-color: #f1f6fa;
+}
+
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #333;
+}
+
+
+/* =========================================
+   HOBBIES AND LEARNING PLAN
+   ========================================= */
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   PHOTO GALLERY
+   ========================================= */
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   VIDEO
+   ========================================= */
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   AUDIO
+   ========================================= */
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9eef3;
+}
+
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 3px solid #f0b429;
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #333;
+}
+
+
+/* =========================================
+   FORM FEEDBACK
+   ========================================= */
+
+#formFeedback {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-success {
+    background-color: #e6f4ea;
+    border: 1px solid #2e7d32;
+    color: #1b5e20;
+}
+
+.form-error {
+    background-color: #fdecea;
+    border: 1px solid #c62828;
+    color: #b71c1c;
+}
+
+
+/* =========================================
+   FORM FIELD ERROR
+   ========================================= */
+
+.field-error {
+    border: 2px solid #c62828 !important;
+}
+
+.error-message {
+    color: #c62828;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   PROJECTS AND SKILLS
+   ========================================= */
+
+.project {
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #1f4e79;
+}
+
+.project-details {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border-left: 4px solid #1f4e79;
+}
+
+.project-details.show {
+    display: block;
+}
+
+.details-button {
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   GALLERY VIEWER
+   ========================================= */
+
+.gallery-viewer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery-viewer img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   THEME SWITCH
+   ========================================= */
+
+.theme-button {
+    margin: 15px auto;
+    display: block;
+}
+
+
+/* =========================================
+   DARK THEME
+   ========================================= */
+
+body.dark-theme {
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+body.dark-theme .content-section {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+body.dark-theme #hobbies {
+    background-color: #252525;
+}
+
+body.dark-theme h2 {
+    color: #90caf9;
+    border-bottom-color: #90caf9;
+}
+
+body.dark-theme h3 {
+    color: #eeeeee;
+}
+
+body.dark-theme .project {
+    background-color: #252525;
+    border-color: #555;
+}
+
+body.dark-theme .project-details {
+    background-color: #1e1e1e;
+    border-left-color: #90caf9;
+}
+
+body.dark-theme figure {
+    background-color: #252525;
+    border-color: #555;
+}
+
+body.dark-theme th {
+    background-color: #333;
+}
+
+body.dark-theme th,
+body.dark-theme td {
+    border-color: #666;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+    background-color: #252525;
+    color: white;
+    border-color: #666;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #f0b429;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   SMALL SCREEN SAFETY
+   ========================================= */
+
+@media (max-width: 375px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+}
